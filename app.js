@@ -7,6 +7,8 @@ const authRoute = require('./routes/authRoute');
 const notfoundMiddleWare = require('./middleware/notfound');
 const errorMiddleware = require('./middleware/error');
 
+const db = require('./services/db');
+
 const app = express();
 
 app.use(morgan('dev'));
